@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRAND Centralized Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#111827',
+            'brand-secondary': '#1F2937',
+            'brand-accent': '#4F46E5',
+            'brand-accent-hover': '#4338CA',
+            'brand-text': '#E5E7EB',
+            'brand-text-secondary': '#9CA3AF',
+          },
+          animation: {
+            'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+            'fade-in': 'fade-in 0.5s ease-out forwards',
+            'scale-in': 'scale-in 0.3s ease-out forwards',
+          },
+          keyframes: {
+            'fade-in-up': {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            'fade-in': {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            'scale-in': {
+                '0%': { opacity: '0', transform: 'scale(0.95)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+            }
+          }
+        }
+      }
+    }
+    </script>
+    <style>
+        .prose-invert ul { list-style-type: disc; margin-left: 1.5rem; }
+        .prose-invert b, .prose-invert strong { font-weight: 700; }
+        .prose-invert p { margin-bottom: 1rem; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+</head>
+<body class="bg-brand-dark text-brand-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

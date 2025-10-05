@@ -1,0 +1,5 @@
+{
+  "name": "BRAND Centralized Admin Panel",
+  "description": "A centralized admin website for the parent company BRAND that integrates full control over its subsidiaries: BEOK, WORD'S, VÓID AI, ESCAN, and EBOK. It includes dashboards, content management, analytics, and AI integration.",
+  "requestFramePermissions": []
+}
